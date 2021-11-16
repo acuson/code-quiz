@@ -17,6 +17,15 @@ p {
     text-align: center;
 }
 
+button {
+    display: flex;
+    background-color: purple;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
 #button {
     display: flex;
     justify-content: center;
@@ -28,3 +37,4 @@ p {
     color: white;
     border-radius: 8px;
 }
+

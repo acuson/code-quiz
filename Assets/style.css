@@ -38,3 +38,12 @@ button {
     border-radius: 8px;
 }
 
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
+    display: none;
+}

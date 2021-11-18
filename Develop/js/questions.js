@@ -23,36 +23,35 @@ two.style.display = "block"}});
 
 //Clicking any button from page 2 to move to page 3
 
-//First button
-var question1 = document.getElementsByClassName("question-1")[0];
-question1.addEventListener("click", function show() {
-  const pages3 = document.getElementsByClassName("page");
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-three.style.display = "block"}});
-
-//Second button
-var question1 = document.getElementsByClassName("question-1")[1];
-question1.addEventListener("click", function show() {
-  const pages3 = document.getElementsByClassName("page");
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-three.style.display = "block"}});
-
-//Third button
-var question1 = document.getElementsByClassName("question-1")[2];
-question1.addEventListener("click", function show() {
-  const pages3 = document.getElementsByClassName("page");
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-three.style.display = "block"}});
-
-//Fourth button
-var question1 = document.getElementsByClassName("question-1")[3];
-question1.addEventListener("click", function show() {
-  const pages3 = document.getElementsByClassName("page");
-  for (let i = 0; i < pages.length; i++) {
-    pages[i].style.display = "none";
-three.style.display = "block"}});
+var question1 = document.getElementsByClassName("question-1");
+// var pageNumber3 = three.style.display;
+addQuestionListener(question1,three);
 
 //Clicking any button from page 3 to move to page 4
+var question2 = document.getElementsByClassName("question-2");
+// var pageNumber4 = four.style.display;
+addQuestionListener(question2, four);
+
+var question3 = document.getElementsByClassName("question-3");
+// var pageNumber5 = five.style.display;
+addQuestionListener(question3, five);
+
+var question4 = document.getElementsByClassName("question-4");
+addQuestionListener(question4, six);
+
+var question5 = document.getElementsByClassName("question-5");
+addQuestionListener(question5, seven);
+
+// var allDone = document.getElementsByClassName("submit");
+// addQuestionListener(submit, eight);
+
+function addQuestionListener(question2, pageElement) {
+  for (let i = 0; i < 4; i++) {
+    let question = question2[i];
+    question.addEventListener("click", function show() {
+    const pages4 = document.getElementsByClassName("page");
+    for (let i = 0; i < pages.length; i++) {
+      pages[i].style.display = "none";
+      pageElement.style.display = "block"}});
+    }
+}

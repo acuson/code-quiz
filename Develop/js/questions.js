@@ -11,7 +11,6 @@ const pages = document.getElementsByClassName("page");
   for (let i = 0; i < pages.length; i++) {
     pages[i].style.display = "none";
   }
-
   one.style.display = "block";
 
 //Clicking start quiz button to move to page 2
